@@ -3,10 +3,10 @@
 ## Installing Collectd
 
 ### Prerequisites
-* yajl (Yet Another Json Library, needed for Riak Stats)
-** brew install yajl
-** yum install yajl
-** apt-get install yajl
+yajl (Yet Another Json Library, needed for Riak Stats)
+* brew install yajl
+* yum install yajl
+* apt-get install yajl
 
 ### Install Collectd (https://collectd.org/wiki/index.php/First_steps for more information)
 * brew install collectd
