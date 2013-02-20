@@ -1,5 +1,15 @@
 #collectd_tool
 
+## About CollectdTool
+
+CollectdTool.py is a simple script for aggregating the many files that the collectd CSV plugin generates into a single file. In order to find common ground between many different files, I've rolled up stats using a rolling average with a 1 minute window. The leftmost column on the final generated CSV file is elapsed_minutes because of this.
+
+TODO
+* Split into multiple files by group (riak, cpu, memory, etc)
+* Integrate with R or another automatic graph generation technique
+* Make the rolling average window configurable, as the Interval collectd config value could be > 1 minute, though not likely
+* Make column names prettier and easier to read possibly through some regex magic
+
 ## Installing Collectd
 
 ### Prerequisites
